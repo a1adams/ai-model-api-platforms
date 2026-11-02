@@ -1,0 +1,297 @@
+{
+  "keyword": "ai model api platforms",
+  "title": "AI Model API Platforms: 7 Compared for Image and Video Jobs (2026)",
+  "lastChecked": "2026-11-02",
+  "capabilityChecks": [
+    {
+      "key": "restApi",
+      "label": "REST API"
+    },
+    {
+      "key": "officialSdk",
+      "label": "Official SDK"
+    },
+    {
+      "key": "completionWebhook",
+      "label": "Completion webhook"
+    },
+    {
+      "key": "mcpServer",
+      "label": "MCP server"
+    },
+    {
+      "key": "multiModelRunFromOneCall",
+      "label": "Multi-model run from one call"
+    },
+    {
+      "key": "deployYourOwnModel",
+      "label": "Deploy your own model"
+    },
+    {
+      "key": "manyTasksInOneRequest",
+      "label": "Many tasks in one request"
+    }
+  ],
+  "tools": [
+    {
+      "n": 1,
+      "name": "Wireflow",
+      "tagline": "Best overall for running several models from one API call",
+      "homepage": "https://www.wireflow.ai/",
+      "docs": "https://www.wireflow.ai/docs/api/overview",
+      "pricing": "https://www.wireflow.ai/pricing",
+      "claudeConnection": "Custom connector, OAuth sign-in",
+      "restApi": true,
+      "modelSupport": "100+ image, video and audio models as nodes",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "Pricing page checked 2026-11-02: API and MCP access are on every plan, and runs spend your credits.",
+      "quickstart": [
+        {
+          "label": "Add the Wireflow connector to Claude Code, from the wireflowINC/skills README. Then run /mcp to sign in.",
+          "lang": "bash",
+          "code": "claude mcp add --transport http wireflow https://www.wireflow.ai/api/mcp"
+        },
+        {
+          "label": "Or run a saved board from code: send its input values to this endpoint with an API key, then poll the execution. The request format is in the API reference linked under Docs.",
+          "lang": "text",
+          "code": "POST /api/v1/workflows/{id}/run"
+        }
+      ],
+      "moneyPage": "https://www.wireflow.ai/ai-workflow-builder",
+      "moneyPageLabel": "Wireflow AI workflow builder page",
+      "capabilities": {
+        "restApi": true,
+        "officialSdk": false,
+        "completionWebhook": true,
+        "mcpServer": true,
+        "multiModelRunFromOneCall": true,
+        "deployYourOwnModel": null,
+        "manyTasksInOneRequest": null
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 2,
+      "name": "fal",
+      "tagline": "Best for reaching 1,000+ media models through one queue",
+      "homepage": "https://fal.ai/",
+      "docs": "https://fal.ai/docs/documentation/model-apis/inference/queue.md",
+      "pricing": "https://fal.ai/pricing",
+      "claudeConnection": "Hosted MCP, Streamable HTTP, OAuth",
+      "restApi": true,
+      "modelSupport": "1,000+ image, video, audio and 3D models",
+      "freeTier": "unverified",
+      "repo": "fal-ai/fal",
+      "note": null,
+      "quickstart": [
+        {
+          "label": "Install the fal CLI, from fal's Serverless docs. Then test an app with fal run and ship it with fal deploy.",
+          "lang": "bash",
+          "code": "pip install fal"
+        }
+      ],
+      "capabilities": {
+        "restApi": true,
+        "officialSdk": true,
+        "completionWebhook": true,
+        "mcpServer": true,
+        "multiModelRunFromOneCall": true,
+        "deployYourOwnModel": true,
+        "manyTasksInOneRequest": null
+      },
+      "live": {
+        "stars": 979,
+        "lastPush": "2026-11-02T01:21:38Z",
+        "latestRelease": "fal_v1.84.0",
+        "latestReleaseDate": "2026-10-30",
+        "checkedAt": "2026-11-02"
+      }
+    },
+    {
+      "n": 3,
+      "name": "Replicate",
+      "tagline": "Best for open models and for deploying your own",
+      "homepage": "https://replicate.com/",
+      "docs": "https://replicate.com/docs/topics/predictions/create-a-prediction",
+      "pricing": "https://replicate.com/pricing",
+      "claudeConnection": "Remote MCP server or replicate-mcp npm package",
+      "restApi": true,
+      "modelSupport": "Over 100 official models plus community models",
+      "freeTier": "unverified",
+      "repo": "replicate/replicate-python",
+      "note": "For predictions created through the API, output files are deleted after an hour (checked 2026-10-11).",
+      "quickstart": [
+        {
+          "label": "Setup reference: create a prediction, from the Replicate docs. This is a documentation URL, not an executed API example.",
+          "lang": "text",
+          "code": "https://replicate.com/docs/topics/predictions/create-a-prediction"
+        }
+      ],
+      "capabilities": {
+        "restApi": true,
+        "officialSdk": true,
+        "completionWebhook": true,
+        "mcpServer": true,
+        "multiModelRunFromOneCall": null,
+        "deployYourOwnModel": true,
+        "manyTasksInOneRequest": null
+      },
+      "live": {
+        "stars": 918,
+        "lastPush": "2025-08-26T17:18:17Z",
+        "latestRelease": "1.0.7",
+        "latestReleaseDate": "2025-05-27",
+        "checkedAt": "2026-11-02"
+      }
+    },
+    {
+      "n": 4,
+      "name": "Runware",
+      "tagline": "Best for sending many image tasks in one request",
+      "homepage": "https://runware.ai/",
+      "docs": "https://runware.ai/docs/models-api/introduction",
+      "pricing": "https://runware.ai/pricing",
+      "claudeConnection": "Hosted MCP, OAuth 2.1",
+      "restApi": true,
+      "modelSupport": "Image, video, audio, LLM and 3D models",
+      "freeTier": "unverified",
+      "repo": "runware/runware-python",
+      "note": "The linked repository is the official Python SDK. A TypeScript SDK is documented as well.",
+      "quickstart": [
+        {
+          "label": "Send one image task, from the Runware Models API introduction. The request body is an array, so more task objects can go in the same call.",
+          "lang": "bash",
+          "code": "curl https://api.runware.ai/v1 \\\n  -H \"Authorization: Bearer $RUNWARE_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '[\n    {\n      \"taskType\": \"imageInference\",\n      \"taskUUID\": \"a770f077-f413-47de-9dac-be0b26a35da6\",\n      \"model\": \"xai:grok-imagine@image-quality\",\n      \"positivePrompt\": \"A golden retriever on a park bench, cinematic lighting\",\n      \"width\": 1024,\n      \"height\": 1024\n    }\n  ]'"
+        }
+      ],
+      "capabilities": {
+        "restApi": true,
+        "officialSdk": true,
+        "completionWebhook": true,
+        "mcpServer": true,
+        "multiModelRunFromOneCall": null,
+        "deployYourOwnModel": true,
+        "manyTasksInOneRequest": true
+      },
+      "live": {
+        "stars": 3,
+        "lastPush": "2026-10-28T11:29:32Z",
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": "2026-11-02"
+      }
+    },
+    {
+      "n": 5,
+      "name": "WaveSpeedAI",
+      "tagline": "Best for checking a price before a run",
+      "homepage": "https://wavespeed.ai/",
+      "docs": "https://wavespeed.ai/docs/how-to-use-webhooks",
+      "pricing": "https://wavespeed.ai/docs/how-pricing-works",
+      "claudeConnection": "MCP server via npx",
+      "restApi": true,
+      "modelSupport": "1000+ image, video, audio, 3D and LLM models",
+      "freeTier": "unverified",
+      "repo": "WaveSpeedAI/mcp-server",
+      "note": "The linked repository is the official MCP server. Its get_price tool quotes a price before a run.",
+      "quickstart": [
+        {
+          "label": "Add the WaveSpeedAI MCP server to Claude Code, from the WaveSpeedAI/mcp-server README. It runs with npx and your API key.",
+          "lang": "bash",
+          "code": "claude mcp add wavespeed -- npx -y @wavespeed/mcp"
+        }
+      ],
+      "capabilities": {
+        "restApi": true,
+        "officialSdk": null,
+        "completionWebhook": true,
+        "mcpServer": true,
+        "multiModelRunFromOneCall": null,
+        "deployYourOwnModel": null,
+        "manyTasksInOneRequest": null
+      },
+      "live": {
+        "stars": 36,
+        "lastPush": "2026-11-01T14:55:01Z",
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": "2026-11-02"
+      }
+    },
+    {
+      "n": 6,
+      "name": "Together AI",
+      "tagline": "Best for open models and FLUX images on a prepaid balance",
+      "homepage": "https://www.together.ai/",
+      "docs": "https://docs.together.ai/docs/images-overview",
+      "pricing": "https://www.together.ai/pricing",
+      "claudeConnection": null,
+      "restApi": true,
+      "modelSupport": "Open models and FLUX image models",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "Fully prepaid, with a minimum $15 first credit purchase; the billing docs say there are no free trials (checked 2026-10-11).",
+      "quickstart": [
+        {
+          "label": "The image endpoint, from Together's images overview: one POST that names a model, such as FLUX.2 dev, and returns the image URL.",
+          "lang": "text",
+          "code": "POST /v1/images/generations"
+        }
+      ],
+      "capabilities": {
+        "restApi": true,
+        "officialSdk": null,
+        "completionWebhook": null,
+        "mcpServer": null,
+        "multiModelRunFromOneCall": null,
+        "deployYourOwnModel": null,
+        "manyTasksInOneRequest": null
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 7,
+      "name": "DeepInfra",
+      "tagline": "Best for pay-per-use open models with no contract",
+      "homepage": "https://deepinfra.com/",
+      "docs": null,
+      "pricing": "https://deepinfra.com/pricing",
+      "claudeConnection": null,
+      "restApi": true,
+      "modelSupport": "Text, image, video, speech and embedding models",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "Webhooks are a feature of the native API and are not supported with the OpenAI-compatible API (checked 2026-10-11).",
+      "quickstart": null,
+      "capabilities": {
+        "restApi": true,
+        "officialSdk": null,
+        "completionWebhook": true,
+        "mcpServer": null,
+        "multiModelRunFromOneCall": null,
+        "deployYourOwnModel": null,
+        "manyTasksInOneRequest": null
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    }
+  ]
+}
