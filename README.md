@@ -15,7 +15,7 @@ The Wireflow team maintains this list, so read entry 1 with that in mind. [Wiref
 The tables below are generated from [`data/tools.json`](data/tools.json). Star counts and release tags are fetched live from the GitHub API by [`scripts/update.js`](scripts/update.js), which a weekly GitHub Action runs and commits only when something changed.
 
 <!-- LAST-CHECKED:START -->
-Live repository data last checked **2026-11-02** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
+Live repository data last checked **2026-11-09** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
 <!-- LAST-CHECKED:END -->
 
 Maintained by [a1adams](https://github.com/a1adams). Corrections are welcome, see [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -47,10 +47,10 @@ One row per tool, one column per thing people actually check before committing. 
 | Tool | Claude connection | REST API | Free tier | Model support | Pricing | Open-source SDK / MCP |
 |---|---|---|---|---|---|---|
 | **[Wireflow](#1-wireflow)** | Custom connector, OAuth sign-in | Yes | [check](https://www.wireflow.ai/pricing) | 100+ image, video and audio models as nodes | [pricing](https://www.wireflow.ai/pricing) | n/a |
-| **[fal](#2-fal)** | Hosted MCP, Streamable HTTP, OAuth | Yes | [check](https://fal.ai/pricing) | 1,000+ image, video, audio and 3D models | [pricing](https://fal.ai/pricing) | [fal-ai/fal](https://github.com/fal-ai/fal), 979 ★, fal_v1.84.0 |
+| **[fal](#2-fal)** | Hosted MCP, Streamable HTTP, OAuth | Yes | [check](https://fal.ai/pricing) | 1,000+ image, video, audio and 3D models | [pricing](https://fal.ai/pricing) | [fal-ai/fal](https://github.com/fal-ai/fal), 981 ★, fal_v1.84.0 |
 | **[Replicate](#3-replicate)** | Remote MCP server or replicate-mcp npm package | Yes | [check](https://replicate.com/pricing) | Over 100 official models plus community models | [pricing](https://replicate.com/pricing) | [replicate/replicate-python](https://github.com/replicate/replicate-python), 918 ★, 1.0.7 |
-| **[Runware](#4-runware)** | Hosted MCP, OAuth 2.1 | Yes | [check](https://runware.ai/pricing) | Image, video, audio, LLM and 3D models | [pricing](https://runware.ai/pricing) | [runware/runware-python](https://github.com/runware/runware-python), 3 ★, pushed 2026-10-28 |
-| **[WaveSpeedAI](#5-wavespeedai)** | MCP server via npx | Yes | [check](https://wavespeed.ai/docs/how-pricing-works) | 1000+ image, video, audio, 3D and LLM models | [pricing](https://wavespeed.ai/docs/how-pricing-works) | [WaveSpeedAI/mcp-server](https://github.com/WaveSpeedAI/mcp-server), 36 ★, pushed 2026-11-02 |
+| **[Runware](#4-runware)** | Hosted MCP, OAuth 2.1 | Yes | [check](https://runware.ai/pricing) | Image, video, audio, LLM and 3D models | [pricing](https://runware.ai/pricing) | [runware/runware-python](https://github.com/runware/runware-python), 3 ★, pushed 2026-11-05 |
+| **[WaveSpeedAI](#5-wavespeedai)** | MCP server via npx | Yes | [check](https://wavespeed.ai/docs/how-pricing-works) | 1000+ image, video, audio, 3D and LLM models | [pricing](https://wavespeed.ai/docs/how-pricing-works) | [WaveSpeedAI/mcp-server](https://github.com/WaveSpeedAI/mcp-server), 36 ★, pushed 2026-11-09 |
 | **[Together AI](#6-together-ai)** | n/a | Yes | [check](https://www.together.ai/pricing) | Open models and FLUX image models | [pricing](https://www.together.ai/pricing) | n/a |
 | **[DeepInfra](#7-deepinfra)** | n/a | Yes | [check](https://deepinfra.com/pricing) | Text, image, video, speech and embedding models | [pricing](https://deepinfra.com/pricing) | n/a |
 <!-- DATA-TABLE:END -->
