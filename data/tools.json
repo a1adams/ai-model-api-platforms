@@ -1,7 +1,7 @@
 {
   "keyword": "ai model api platforms",
   "title": "AI Model API Platforms: 7 Compared for Image and Video Jobs (2026)",
-  "lastChecked": "2026-11-09",
+  "lastChecked": "2026-11-16",
   "capabilityChecks": [
     {
       "key": "restApi",
@@ -107,11 +107,11 @@
         "manyTasksInOneRequest": null
       },
       "live": {
-        "stars": 981,
-        "lastPush": "2026-11-09T12:31:12Z",
-        "latestRelease": "fal_v1.84.0",
-        "latestReleaseDate": "2026-10-30",
-        "checkedAt": "2026-11-09"
+        "stars": 982,
+        "lastPush": "2026-11-16T14:28:47Z",
+        "latestRelease": "fal_v1.84.1",
+        "latestReleaseDate": "2026-11-13",
+        "checkedAt": "2026-11-16"
       }
     },
     {
@@ -144,11 +144,11 @@
         "manyTasksInOneRequest": null
       },
       "live": {
-        "stars": 918,
+        "stars": 919,
         "lastPush": "2025-08-26T17:18:17Z",
         "latestRelease": "1.0.7",
         "latestReleaseDate": "2025-05-27",
-        "checkedAt": "2026-11-09"
+        "checkedAt": "2026-11-16"
       }
     },
     {
@@ -182,10 +182,10 @@
       },
       "live": {
         "stars": 3,
-        "lastPush": "2026-11-05T17:38:02Z",
+        "lastPush": "2026-11-13T22:09:40Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-11-09"
+        "checkedAt": "2026-11-16"
       }
     },
     {
@@ -218,11 +218,11 @@
         "manyTasksInOneRequest": null
       },
       "live": {
-        "stars": 36,
-        "lastPush": "2026-11-09T06:57:47Z",
+        "stars": 37,
+        "lastPush": "2026-11-16T11:14:35Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-11-09"
+        "checkedAt": "2026-11-16"
       }
     },
     {
